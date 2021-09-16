@@ -32,7 +32,8 @@ const App=() => {
       <div>
         <Todolist todos={todos}
                   setTodos ={setTodos}
-                  setEditTodo ={setEditTodo}/>
+                  setEditTodo ={setEditTodo}
+                  />
       </div>
     </>
   );
