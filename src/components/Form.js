@@ -40,7 +40,7 @@ return (
         onChange ={onInputChange}
         />
         <button type = 'submit'>
-           {editTodo ? 'OK':'Add'} 
+           {editTodo ? 'Repost':'Post'} 
         </button>
     </form>
     </div>

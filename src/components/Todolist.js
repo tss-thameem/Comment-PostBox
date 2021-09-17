@@ -24,13 +24,13 @@ const Todolist =({todos, setTodos, setEditTodo})=>{
         <div>
             {todos.map((todo) =>(
              <span key = {todo.id}>
-                 <input type = 'text' 
+                 <textarea type = 'text' 
                         value = {todo.title} 
                         className={todo.completed ?'complete':''}
                         onChange ={(event)=>event.preventDefault()}
                  />
                  <div>
-        <button onClick ={()=>handleComplete(todo)}>Check</button>
+        {/* <button onClick ={()=>handleComplete(todo)}>Check</button> */}
         <button onClick ={()=> handleEdit(todo)}>Edit</button>
         <button onClick ={()=>handleDelete(todo)}>Delete</button>
         </div>

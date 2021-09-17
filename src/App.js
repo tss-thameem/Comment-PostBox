@@ -6,13 +6,13 @@ import Todolist from './components/Todolist.js';
 
 
 const App=() => {
-  const initialState = JSON.parse(localStorage.getItem('todos')) || [];
+  // const initialState = JSON.parse(localStorage.getItem('todos')) || [];
   const[input,setInput] = useState('');
-  const[todos,setTodos] = useState(initialState);
+  const[todos,setTodos] = useState([]);// Use () inside initialState
   const[editTodo, setEditTodo] = useState(null);
-  useEffect(()=>{
-    localStorage.setItem('todos', JSON.stringify(todos));
-  },[todos]);
+  // useEffect(()=>{
+  //   localStorage.setItem('todos', JSON.stringify(todos));
+  // },[todos]);
   return (
     <>
       <div>
